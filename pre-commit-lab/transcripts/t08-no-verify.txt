@@ -1,0 +1,33 @@
+$ git commit --no-verify -m "Add a spare stool (in a hurry)"
+[main df64386] Add a spare stool (in a hurry)
+ 1 file changed, 4 insertions(+)
+(exit code: 0)
+
+(no hooks ran at all. the bad line is now in history. run the hooks over everything to catch it:)
+$ pre-commit run --all-files
+trim trailing whitespace.................................................Failed
+- hook id: trailing-whitespace
+- exit code: 1
+- files were modified by this hook
+
+Fixing notes.txt
+
+fix end of files.........................................................Failed
+- hook id: end-of-file-fixer
+- exit code: 1
+- files were modified by this hook
+
+Fixing notes.txt
+
+check yaml...............................................................Passed
+no DO-NOT-COMMIT markers.................................................Passed
+(exit code: 1)
+
+$ git commit -m "Clean up the stool line"
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...........................................(no files to check)Skipped
+no DO-NOT-COMMIT markers.................................................Passed
+[main 92ffa22] Clean up the stool line
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(exit code: 0)

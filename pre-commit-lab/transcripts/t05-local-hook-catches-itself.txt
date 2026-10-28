@@ -1,0 +1,12 @@
+$ git commit -m "Add a local hook that rejects DO-NOT-COMMIT markers"
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+no DO-NOT-COMMIT markers.................................................Failed
+- hook id: no-marker
+- exit code: 1
+
+.pre-commit-config.yaml: contains DO-NOT-COMMIT
+tools/no-marker.sh: contains DO-NOT-COMMIT
+
+(exit code: 1)

@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+  - repo: local
+    hooks:
+      - id: no-marker
+        name: no DO-NOT-COMMIT markers
+        entry: tools/no-marker.sh
+        language: system
+        types: [text]
+        exclude: ^(tools/no-marker\.sh|\.pre-commit-config\.yaml)$

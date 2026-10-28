@@ -1,0 +1,3 @@
+workshop:
+  benches: [4, 2]
+  lights: led

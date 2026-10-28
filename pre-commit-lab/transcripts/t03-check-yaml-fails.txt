@@ -1,0 +1,22 @@
+$ git commit -m "Add a second bench row"
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Failed
+- hook id: check-yaml
+- exit code: 1
+
+while parsing a flow sequence
+  in "settings.yaml", line 2, column 12
+expected ',' or ']', but got ':'
+  in "settings.yaml", line 3, column 9
+
+(exit code: 1)
+
+(fix the missing closing bracket, stage, and commit again)
+$ git commit -m "Add a second bench row"
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+[main 8a42f5c] Add a second bench row
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+(exit code: 0)

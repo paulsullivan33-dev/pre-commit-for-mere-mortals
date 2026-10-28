@@ -1,0 +1,16 @@
+$ cat -A notes.txt   (the hooks already fixed it in the working tree)
+Shopping list for the workshop$
+- pencils$
+- graph paper$
+
+$ git add notes.txt
+$ git commit -m "Add workshop notes"
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+[main (root-commit) e7b2e51] Add workshop notes
+ 3 files changed, 13 insertions(+)
+ create mode 100644 .pre-commit-config.yaml
+ create mode 100644 notes.txt
+ create mode 100644 settings.yaml
+(exit code: 0)

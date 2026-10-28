@@ -1,0 +1,31 @@
+$ git commit -m "Add a local hook that rejects DO-NOT-COMMIT markers"   (with the exclude line added)
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+no DO-NOT-COMMIT markers.............................(no files to check)Skipped
+[main 853dda3] Add a local hook that rejects DO-NOT-COMMIT markers
+ 2 files changed, 18 insertions(+)
+ create mode 100755 tools/no-marker.sh
+(exit code: 0)
+
+$ git commit -m "Draft agenda"   (marker still in the file)
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...........................................(no files to check)Skipped
+no DO-NOT-COMMIT markers.................................................Failed
+- hook id: no-marker
+- exit code: 1
+
+agenda.txt: contains DO-NOT-COMMIT
+
+(exit code: 1)
+
+$ git commit -m "Draft agenda"   (marker removed)
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...........................................(no files to check)Skipped
+no DO-NOT-COMMIT markers.................................................Passed
+[main 5114220] Draft agenda
+ 1 file changed, 2 insertions(+)
+ create mode 100644 agenda.txt
+(exit code: 0)

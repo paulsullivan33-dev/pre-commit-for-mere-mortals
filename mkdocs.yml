@@ -1,0 +1,26 @@
+site_name: Pre-commit for Mere Mortals
+site_description: A gatekeeper for your git commits. Installing pre-commit, wiring in checks that run before every commit, fixing the files they flag, writing hooks of your own, and keeping the whole set current, with the limits stated plainly.
+site_url: https://paulsullivan33-dev.github.io/pre-commit-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What Pre-commit Is: what-pre-commit-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing Pre-commit: installing-pre-commit.md
+  - Your First Hooks: your-first-hooks.md
+  - Running Hooks on Demand: running-hooks-on-demand.md
+  - Choosing and Configuring Hooks: choosing-and-configuring-hooks.md
+  - Your Own Hooks: your-own-hooks.md
+  - Keeping Hooks Current: keeping-hooks-current.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

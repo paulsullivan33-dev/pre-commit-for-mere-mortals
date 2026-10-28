@@ -1,0 +1,17 @@
+$ pre-commit --version
+pre-commit 4.7.0
+
+$ cat .pre-commit-config.yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+
+$ pre-commit validate-config .pre-commit-config.yaml
+(no output: the config is valid)
+
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit

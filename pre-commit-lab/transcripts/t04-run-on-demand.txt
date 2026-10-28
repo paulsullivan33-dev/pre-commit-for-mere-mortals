@@ -1,0 +1,9 @@
+$ pre-commit run --all-files
+trim trailing whitespace.................................................Passed
+fix end of files.........................................................Passed
+check yaml...............................................................Passed
+(exit code: 0)
+
+$ pre-commit run trailing-whitespace --all-files
+trim trailing whitespace.................................................Passed
+(exit code: 0)

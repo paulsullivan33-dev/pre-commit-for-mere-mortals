@@ -1,0 +1,9 @@
+$ grep rev: .pre-commit-config.yaml
+    rev: v4.5.0
+
+$ pre-commit autoupdate
+[https://github.com/pre-commit/pre-commit-hooks] updating v4.5.0 -> v6.0.0
+(exit code: 0)
+
+$ grep rev: .pre-commit-config.yaml
+    rev: v6.0.0
